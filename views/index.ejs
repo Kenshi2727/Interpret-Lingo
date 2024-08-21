@@ -28,16 +28,25 @@
 
         <div class="translate flex flex-col md:flex-row gap-y-2 md:gap-x-12">
             <div class="translate-from">
-                <p class="font-serif text-white my-2 lg:text-xl">Translate From:</p>
+                <div class="translate-from-button flex gap-2">
+                    <p class="font-serif text-white my-2 lg:text-xl">Translate From:</p>
+                    <button class="languages font-serif text-white my-2 lg:text-xl underline underline-offset-4">ejs
+                        code</button>
+                </div>
                 <textarea
-                    class="bg-[#2d2b2b] w-60 h-32 md:w-80 md:h-48 lg:w-[30rem] xl:w-[40rem] xl:h-72 border-white border resize-none outline-white text-white"
+                    class="bg-[#2d2b2b] w-60 h-32 md:w-80 md:h-48 lg:w-[30rem] xl:w-[40rem] xl:h-72 p-2 border-white border resize-none outline-white text-[#acd25f]"
                     name="from" id="from"></textarea>
             </div>
             <div class="translate-to">
-                <p class="font-serif text-white my-2 lg:text-xl">Translate To:</p>
+                <div class="translate-to-button flex gap-2">
+                    <p class="font-serif text-white my-2 lg:text-xl">Translate To:</p>
+                    <button class="languages font-serif text-white my-2 lg:text-xl underline underline-offset-4">ejs
+                        code</button>
+                </div>
+
                 <form action="/translate" method="post">
                     <textarea
-                        class="bg-[#2d2b2b] w-60 h-32 md:w-80 md:h-48 lg:w-[30rem] xl:w-[40rem] xl:h-72 border-white border resize-none outline-white text-white"
+                        class="bg-[#2d2b2b] w-60 h-32 md:w-80 md:h-48 lg:w-[30rem] xl:w-[40rem] xl:h-72 p-2 border-white border resize-none outline-white text-[#acd25f]"
                         name="to" id="to"></textarea>
                 </form>
             </div>
