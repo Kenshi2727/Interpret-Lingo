@@ -45,32 +45,54 @@
                             id="dropdown">
                             <ul class="py-1" aria-labelledby="dropdown">
                                 <li>
-                                    <a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Some
-                                        Language</a>
+                                    <form class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2" action="/lang"
+                                        method="post">
+                                        <textarea name="lang" class="hidden">en</textarea>
+                                        <input type="submit" name="lang" value="english">
+                                    </form>
+                                </li>
+
+                                <li>
+                                    <form class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2" action="/lang"
+                                        method="post">
+                                        <textarea name="lang" class="hidden">en</textarea>
+                                        <input type="submit" name="lang" value="english">
+                                    </form>
+
+                                </li>
+
+                                <li>
+                                    <form class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2" action="/lang"
+                                        method="post">
+                                        <textarea name="lang" class="hidden">en</textarea>
+                                        <input type="submit" name="lang" value="english">
+                                    </form>
+
                                 </li>
                                 <li>
-                                    <a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Some
-                                        Language</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Some
-                                        Language</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Some
-                                        Language</a>
+                                    <form class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2" action="/lang"
+                                        method="post">
+                                        <textarea name="lang" class="hidden">en</textarea>
+                                        <input type="submit" name="lang" value="english">
+                                    </form>
+
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </div>
-                <textarea
-                    class="bg-[#2d2b2b] w-60 h-32 md:w-80 md:h-48 lg:w-[30rem] xl:w-[40rem] xl:h-72 p-2 border-white border resize-none outline-white text-[#acd25f]"
-                    name="from" id="from"></textarea>
+                <form class="flex flex-col md:gap-y-12 gap-y-2" id="myForm" action="/translate" method="post">
+                    <textarea
+                        class="bg-[#2d2b2b] w-60 h-32 md:w-80 md:h-48 lg:w-[30rem] xl:w-[40rem] xl:h-72 p-2 border-white border resize-none outline-white text-[#acd25f]"
+                        name="from" id="from" placeholder="Write your text here......"></textarea>
+                    <input
+                        class="w-40 md:w-52 text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-sm px-4 py-2 text-center me-2 mb-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500 dark:focus:ring-blue-800"
+                        type="submit" id='submit' value="Translate Your Text">
+                </form>
             </div>
             <div class="translate-to">
                 <div class="translate-to-button flex gap-2">
-                    <p class="font-serif text-white my-2 lg:text-xl">Translate To:</p>
+                    <p class="font-serif text-white my-2 lg:text-xl">Translate Into:</p>
                     <!-- component -->
                     <div class="dropdown-container">
                         <button
@@ -86,38 +108,53 @@
                             id="dropdown">
                             <ul class="py-1" aria-labelledby="dropdown">
                                 <li>
-                                    <a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Some
-                                        Language</a>
+                                    <form class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2" action="/lang"
+                                        method="post">
+                                        <textarea name="convert" class="hidden">hi</textarea>
+                                        <input type="submit" name="convert" value="hindi">
+                                    </form>
+                                </li>
+
+                                <li>
+                                    <form class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2" action="/lang"
+                                        method="post">
+                                        <textarea name="convert" class="hidden">hi</textarea>
+                                        <input type="submit" name="convert" value="hindi">
+                                    </form>
+
+                                </li>
+
+                                <li>
+                                    <form class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2" action="/lang"
+                                        method="post">
+                                        <textarea name="convert" class="hidden">hi</textarea>
+                                        <input type="submit" name="convert" value="hindi">
+                                    </form>
+
                                 </li>
                                 <li>
-                                    <a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Some
-                                        Language</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Some
-                                        Language</a>
-                                </li>
-                                <li>
-                                    <a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Some
-                                        Language</a>
+                                    <form class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2" action="/lang"
+                                        method="post">
+                                        <textarea name="convert" class="hidden">hi</textarea>
+                                        <input type="submit" name="convert" value="hindi">
+                                    </form>
+
                                 </li>
                             </ul>
                         </div>
                     </div>
                 </div>
 
-                <form action="/translate" method="post">
+                <form class="flex flex-col md:gap-y-12 gap-y-2" action="/translate" method="post">
                     <textarea
                         class="bg-[#2d2b2b] w-60 h-32 md:w-80 md:h-48 lg:w-[30rem] xl:w-[40rem] xl:h-72 p-2 border-white border resize-none outline-white text-[#acd25f]"
-                        name="to" id="to"></textarea>
+                        name="to" id="to" placeholder="Write your text here......"></textarea>
+                    <input
+                        class="w-40 md:w-52 text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-sm px-4 py-2 text-center me-2 mb-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500 dark:focus:ring-blue-800"
+                        type="submit" id='copy' value="Copy Translated Text">
                 </form>
             </div>
         </div>
-
-        <button type="button"
-            class="text-blue-700 hover:text-white border border-blue-700 hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium text-sm px-4 py-2 text-center me-2 mb-2 dark:border-blue-500 dark:text-blue-500 dark:hover:text-white dark:hover:bg-blue-500 dark:focus:ring-blue-800">Copy
-            Translated
-            Text</button>
     </div>
     <script src="https://unpkg.com/@themesberg/flowbite@latest/dist/flowbite.bundle.js"></script>
 </body>
