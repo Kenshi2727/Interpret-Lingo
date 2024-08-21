@@ -30,8 +30,39 @@
             <div class="translate-from">
                 <div class="translate-from-button flex gap-2">
                     <p class="font-serif text-white my-2 lg:text-xl">Translate From:</p>
-                    <button class="languages font-serif text-white my-2 lg:text-xl underline underline-offset-4">ejs
-                        code</button>
+                    <!-- component -->
+                    <div class="dropdown-container">
+                        <button
+                            class="languages font-serif text-white my-2 lg:text-xl underline underline-offset-4 font-medium rounded-lg text-center inline-flex items-center"
+                            type="button" data-dropdown-toggle="dropdown">ejs code <svg class="w-4 h-4 ml-2" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg></button>
+
+                        <!-- Dropdown menu -->
+                        <div class="hidden bg-white text-base z-50 list-none divide-y divide-gray-100 rounded shadow my-4"
+                            id="dropdown">
+                            <ul class="py-1" aria-labelledby="dropdown">
+                                <li>
+                                    <a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Some
+                                        Language</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Some
+                                        Language</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Some
+                                        Language</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Some
+                                        Language</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
                 <textarea
                     class="bg-[#2d2b2b] w-60 h-32 md:w-80 md:h-48 lg:w-[30rem] xl:w-[40rem] xl:h-72 p-2 border-white border resize-none outline-white text-[#acd25f]"
@@ -40,8 +71,39 @@
             <div class="translate-to">
                 <div class="translate-to-button flex gap-2">
                     <p class="font-serif text-white my-2 lg:text-xl">Translate To:</p>
-                    <button class="languages font-serif text-white my-2 lg:text-xl underline underline-offset-4">ejs
-                        code</button>
+                    <!-- component -->
+                    <div class="dropdown-container">
+                        <button
+                            class="languages font-serif text-white my-2 lg:text-xl underline underline-offset-4 font-medium rounded-lg text-center inline-flex items-center"
+                            type="button" data-dropdown-toggle="dropdown">ejs code <svg class="w-4 h-4 ml-2" fill="none"
+                                stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7"></path>
+                            </svg></button>
+
+                        <!-- Dropdown menu -->
+                        <div class="hidden bg-white text-base z-50 list-none divide-y divide-gray-100 rounded shadow my-4"
+                            id="dropdown">
+                            <ul class="py-1" aria-labelledby="dropdown">
+                                <li>
+                                    <a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Some
+                                        Language</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Some
+                                        Language</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Some
+                                        Language</a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2">Some
+                                        Language</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
 
                 <form action="/translate" method="post">
@@ -57,6 +119,7 @@
             Translated
             Text</button>
     </div>
+    <script src="https://unpkg.com/@themesberg/flowbite@latest/dist/flowbite.bundle.js"></script>
 </body>
 
 </html>
