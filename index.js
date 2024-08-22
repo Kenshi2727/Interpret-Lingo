@@ -52,7 +52,9 @@ app.post('/translate',async (req,res)=>{
         text:text,
         lang:lang[1],
         lang2:lang2[1]
-      })
+      });
+      lang=[];
+      lang2=[];
      }
     catch(error){
         console.error(`Error: ${error}`);
