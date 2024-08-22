@@ -31,55 +31,60 @@
                 <div class="translate-from-button flex gap-2">
                     <p class="font-serif text-white my-2 lg:text-xl">Translate From:</p>
                     <!-- component -->
-                    <div class="dropdown-container">
+                    <!-- First Dropdown (Translate From) -->
+                    <div class="dropdown-container-from">
                         <button
                             class="languages font-serif text-white my-2 lg:text-xl underline underline-offset-4 font-medium rounded-lg text-center inline-flex items-center"
-                            type="button" data-dropdown-toggle="dropdown">ejs code <svg class="w-4 h-4 ml-2" fill="none"
-                                stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            type="button" data-dropdown-toggle="dropdownFrom">ejs code <svg class="w-4 h-4 ml-2"
+                                fill="none" stroke="currentColor" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
                                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
                                     d="M19 9l-7 7-7-7"></path>
                             </svg></button>
 
-                        <!-- Dropdown menu -->
                         <div class="hidden bg-white text-base z-50 list-none divide-y divide-gray-100 rounded shadow my-4"
-                            id="dropdown">
-                            <ul class="py-1" aria-labelledby="dropdown">
+                            id="dropdownFrom">
+                            <ul class="py-1" aria-labelledby="dropdownFrom">
                                 <li>
                                     <form class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2" action="/lang"
                                         method="post">
                                         <textarea name="lang" class="hidden">en</textarea>
-                                        <input type="submit" name="lang" value="english">
+                                        <input type="submit" name="lang" value="English">
                                     </form>
-                                </li>
-
-                                <li>
-                                    <form class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2" action="/lang"
-                                        method="post">
-                                        <textarea name="lang" class="hidden">en</textarea>
-                                        <input type="submit" name="lang" value="english">
-                                    </form>
-
-                                </li>
-
-                                <li>
-                                    <form class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2" action="/lang"
-                                        method="post">
-                                        <textarea name="lang" class="hidden">en</textarea>
-                                        <input type="submit" name="lang" value="english">
-                                    </form>
-
                                 </li>
                                 <li>
                                     <form class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2" action="/lang"
                                         method="post">
                                         <textarea name="lang" class="hidden">en</textarea>
-                                        <input type="submit" name="lang" value="english">
+                                        <input type="submit" name="lang" value="English">
                                     </form>
-
                                 </li>
+                                <li>
+                                    <form class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2" action="/lang"
+                                        method="post">
+                                        <textarea name="lang" class="hidden">en</textarea>
+                                        <input type="submit" name="lang" value="English">
+                                    </form>
+                                </li>
+                                <li>
+                                    <form class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2" action="/lang"
+                                        method="post">
+                                        <textarea name="lang" class="hidden">en</textarea>
+                                        <input type="submit" name="lang" value="English">
+                                    </form>
+                                </li>
+                                <li>
+                                    <form class="text-sm hover:bg-gray-100 text-gray-700 block px-4 py-2" action="/lang"
+                                        method="post">
+                                        <textarea name="lang" class="hidden">en</textarea>
+                                        <input type="submit" name="lang" value="English">
+                                    </form>
+                                </li>
+                                <!-- Other options... -->
                             </ul>
                         </div>
                     </div>
+
                 </div>
                 <form class="flex flex-col md:gap-y-12 gap-y-2" id="myForm" action="/translate" method="post">
                     <textarea
@@ -156,7 +161,7 @@
             </div>
         </div>
     </div>
-    <script src="https://unpkg.com/@themesberg/flowbite@latest/dist/flowbite.bundle.js"></script>
+    <script script src="https://unpkg.com/@themesberg/flowbite@latest/dist/flowbite.bundle.js"></script>
 </body>
 
 </html>

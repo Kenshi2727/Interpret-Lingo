@@ -12,6 +12,8 @@ app.get("/",(req,res)=>{res.render('index.ejs')});
 app.post('/lang',(req,res)=>{
     lang=req.body.lang;
     console.log(req.body.lang);
+    console.log(req.body.convert);
+    
     
     res.render('index.ejs');
 })
