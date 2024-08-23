@@ -8,14 +8,11 @@ let lang2=[];
 
 const config={
     headers: {
-        'x-rapidapi-key': '143c411a6cmsh8863ab57c063444p16a155jsne1d81f87a40e',
+        'x-rapidapi-key': '86bd06d194msh1c357ba1925fabep1b4b14jsnb057546bef01',
         'x-rapidapi-host': 'rapid-translate-multi-traduction.p.rapidapi.com',
         'Content-Type': 'application/json'
       }
 }
-
-
-
 
 app.use(express.static(('public')));
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -53,12 +50,27 @@ app.post('/translate',async (req,res)=>{
         lang:lang[1],
         lang2:lang2[1]
       });
-      lang=[];
-      lang2=[];
+      lang=[];//clearing the array
+      lang2=[];//clearing the array
      }
     catch(error){
         console.error(`Error: ${error}`);
-        res.send("Some Error Occured!😭");
+        res.render('index.ejs',res.locals={text:"Some Error Occured!😭",translatedText:"Some Error Occured!😭"});
+    }
+});
+
+app.post('/copy-text',(req,res)=>{
+    try{
+        res.render('index.ejs',res.locals={
+            translatedText:"You text is copied to clipboard📋",
+            text:"You text is copied to clipboard📋",
+            lang:lang[1],
+            lang2:lang2[1]
+          });
+    }
+    catch(error){
+        console.error(`Error: ${error}`);
+        res.render('index.ejs',res.locals={text:"Some Error Occured!😭",translatedText:"Some Error Occured!😭"});
     }
 });
 app.listen(port,()=>console.log(`Server is running on port ${port}`));
